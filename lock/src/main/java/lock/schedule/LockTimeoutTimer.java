@@ -1,6 +1,5 @@
-package schedule;
+package lock.schedule;
 
-import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.ZooKeeper;
 
 import java.util.List;
@@ -13,7 +12,7 @@ import java.util.TimerTask;
 public class LockTimeoutTimer {
 
 
-    public static final String LOCK_ROOT_PATH = "/lock";
+    public static final String LOCK_ROOT_PATH = "/distribution_lock";
 
     private ZooKeeper zk;
 
